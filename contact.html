@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamcraft FX Ltd - Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.jpg" alt="Dreamcraft FX Logo" class="logo">
+        <nav>
+            <a href="index.html">Visual Effects</a>
+            <a href="department.html">Department</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="company.html">Company</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="hero" style="background-image: url('img/backgrounds/contact.jpg');">
+        <h1>Contact Us</h1>
+    </div>
+
+    <div class="section">
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>Send us a message</h2>
+                <form action="https://formspree.io/f/xvgpelqb" method="POST">
+                    <input type="hidden" name="_replyto" value="farjiwalaid07@gmail.com">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="background-container">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Address:</strong><br>
+                Dreamcraft FX Ltd<br>
+                123 VFX Street, Hitech City<br>
+                Hyderabad, Telangana 500081<br>
+                India</p>
+                <p><strong>Phone:</strong> +91 40 1234 5678</p>
+                <p><strong>Email:</strong> info@dreamcraftfx.com</p>
+            </div>
+            <div class="background-image">
+                <img src="img/backgrounds/tpn.jpg" alt="Background Image">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="offices">
+            <span>Hyderabad</span>
+            <span>Mumbai</span>
+            <span>Pune</span>
+            <span>Chennai</span>
+            <span>Vancouver</span>
+        </div>
+        <p>&copy; 2023 Dreamcraft FX Ltd. All rights reserved.</p>
+    </footer>
+
+    <script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        fetch(this.action, {
+            method: this.method,
+            body: new FormData(this),
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                alert('Thank you for your submission!');
+                this.reset(); // Reset the form
+            } else {
+                alert('Oops! There was a problem submitting your form.');
+            }
+        });
+    });
+    </script>
+</body>
+</html>
