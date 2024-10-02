@@ -118,19 +118,19 @@ nav a:hover {
 }
 
 .department-item.compositing {
-    background-image: url('img/backgrounds/comp.gif');
+    background-image: url('img/departments/comp.gif');
 }
 
 .department-item.prep {
-    background-image: url('img/backgrounds/prep.jpg');
+    background-image: url('img/departments/prep.jpg');
 }
 
 .department-item.rotoscopy {
-    background-image: url('img/backgrounds/roto.jpg');
+    background-image: url('img/departments/roto.jpg');
 }
 
 .department-item.matchmove {
-    background-image: url('img/backgrounds/mm.jpg');
+    background-image: url('img/departments/mm.jpg');
 }
 
 .department-item:hover {
