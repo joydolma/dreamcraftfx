@@ -205,7 +205,8 @@ footer p {
         flex-direction: column; /* Stack items vertically */
     }
     nav {
-        display: none; /* Hide nav */
+        flex-wrap: wrap; /* Allow nav items to wrap */
+        justify-content: center; /* Center nav items */
     }
     .hamburger {
         display: flex; /* Show hamburger menu */

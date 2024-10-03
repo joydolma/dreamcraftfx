@@ -160,6 +160,7 @@ footer p {
         font-size: 3em;
     }
     nav {
-        display: none;
+        flex-wrap: wrap; /* Allow nav items to wrap */
+        justify-content: center; /* Center nav items */
     }
 }

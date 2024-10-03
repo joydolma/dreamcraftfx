@@ -11,19 +11,6 @@ body, html {
     line-height: 1.6;
 }
 
-/* Hero section styles *//* Reset and base styles */
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #000;
-    color: #fff;
-    line-height: 1.6;
-}
-
 /* Header styles */
 header {
     position: fixed;
@@ -113,24 +100,6 @@ nav a:hover {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-size: cover;
-    background-position: center;
-}
-
-.department-item.compositing {
-    background-image: url('img/departments/comp.gif');
-}
-
-.department-item.prep {
-    background-image: url('img/departments/prep.jpg');
-}
-
-.department-item.rotoscopy {
-    background-image: url('img/departments/roto.jpg');
-}
-
-.department-item.matchmove {
-    background-image: url('img/departments/mm.jpg');
 }
 
 .department-item:hover {
@@ -179,6 +148,7 @@ footer p {
         font-size: 3em;
     }
     nav {
-        display: none;
+        flex-wrap: wrap; /* Allow nav items to wrap */
+        justify-content: center; /* Center nav items */
     }
 }

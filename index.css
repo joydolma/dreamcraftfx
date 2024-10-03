@@ -65,6 +65,7 @@ header:hover {
 nav {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping of nav items */
 }
 nav a {
     color: #fff;
@@ -218,6 +219,7 @@ footer p {
         margin-bottom: 10px;
     }
     nav {
-        display: none;
+        flex-wrap: wrap; /* Allow nav items to wrap */
+        justify-content: center; /* Center nav items */
     }
 }
