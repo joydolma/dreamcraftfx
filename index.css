@@ -65,7 +65,7 @@ header:hover {
 nav {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap; /* Allow wrapping of nav items */
+    flex-wrap: wrap;
 }
 nav a {
     color: #fff;
@@ -130,7 +130,8 @@ nav a:hover {
     overflow: hidden;
     border-radius: 10px;
 }
-.video-wrapper iframe {
+.video-wrapper iframe,
+.video-wrapper img {
     position: absolute;
     top: 0;
     left: 0;
@@ -202,10 +203,10 @@ footer p {
     margin: 0;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
+/* Mobile styles */
+@media (max-width: 767px) {
     .hero h1 {
-        font-size: 3em;
+        font-size: 2em;
     }
     .video-container {
         flex-direction: column;
@@ -227,7 +228,21 @@ footer p {
         margin-bottom: 10px;
     }
     nav {
-        flex-wrap: wrap; /* Allow nav items to wrap */
-        justify-content: center; /* Center nav items */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+    .video-container {
+        flex-direction: row;
+    }
+    .video-wrapper {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+    .content-wrapper {
+        flex: 1;
     }
 }
